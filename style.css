@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  margin: 20px;
+}
+
+.pricing-table {
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.pricing-table h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.plan h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.plan .price {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.plan .price span {
+  font-size: 0.6em;
+}
+
+.plan ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.plan ul li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: white;
+  color: #6e8efb;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background: #6e8efb;
+  color: white;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .pricing-table h1 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+
+  .plan {
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .plan h2 {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+  }
+
+  .plan .price {
+    font-size: 1.4em;
+    margin: 15px 0;
+  }
+
+  .plan ul li {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-table h1 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .plan h2 {
+    font-size: 1.2em;
+    margin-bottom: 6px;
+  }
+
+  .plan .price {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+
+  .plan ul li {
+    font-size: 0.9em;
+  }
+}
